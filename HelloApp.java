@@ -11,10 +11,10 @@ public class HelloApp {
                 sb.append(name).append(", ");
             }
 
-            // remove last comma and space
-            sb.setLength(sb.length() - 2);
+            // remove trailing ", "
+            String names = sb.substring(0, sb.length() - 2);
 
-            System.out.println("Hello, " + sb + "!");
+            System.out.println("Hello, " + names + "!");
         }
     }
 }
